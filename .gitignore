@@ -2,3 +2,4 @@
 .DStore
 .editorconfig
 .vscode
+pages/*.map
