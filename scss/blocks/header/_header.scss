@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  background: $bg-color;
+
+  &__nav {
+    padding: 28px 120px;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    margin: 0 34px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    transition: opacity .3s ease;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+}

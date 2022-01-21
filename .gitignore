@@ -2,4 +2,5 @@
 .DStore
 .editorconfig
 .vscode
-pages/*.map
+pages/**/*.map
+tasks.json
