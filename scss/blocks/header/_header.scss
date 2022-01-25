@@ -1,4 +1,5 @@
 .header {
+  z-index: 2;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
   background: $bg-color;
 
   &__nav {
-    padding: 28px 120px;
+    padding: 27px 120px;
     width: 100%;
     max-width: 1440px;
     min-width: 320px;

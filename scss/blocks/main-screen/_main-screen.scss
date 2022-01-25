@@ -1,0 +1,148 @@
+.main-screen {
+  margin: 0;
+  padding: 0;
+
+  &__content {
+    display: grid;
+    grid-template-areas:
+      "title card"
+      "description card"
+      "button card"
+      "bicycle-name card";
+      grid-template-columns: 470px 1fr;
+      justify-items: start;
+      align-items: start;
+    margin-left: 120px;
+    background-image: url(../../../images/main-background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 91.7%;
+  }
+
+  &__title {
+    grid-area: title;
+    padding-top: 65px;
+    width: 320px;
+    font-size: 55px;
+    line-height: 1.09;
+    letter-spacing: -.5px;
+  }  
+
+  &__text {
+    grid-area: description;
+    margin: 0;
+    padding: 43px 0 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    width: 430px;
+    opacity: .7;
+  }
+
+  &__button {
+    grid-area: button;
+    display: inline-block;
+    margin: 53px 0 0 0;
+    padding: 16px 46px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.29;
+    text-decoration: none;
+    background-color: #24b47e;
+    background-image: linear-gradient(#319E75, #319E75);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    transition: background-size .5s ease;
+
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+
+  &__bicycle-name {
+    grid-area: bicycle-name;
+    margin: 169px 0 0 0;
+    padding: 0 0 205px 0;
+    font-size: 18px;
+    line-height: 1;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: middle;
+      width: 132px;
+      height: 2px;
+      background-color: #d7d4d4;
+    }
+  }
+
+  &__card {
+    grid-area: card;
+    z-index: 1;
+    position: sticky;
+    display: block;
+    margin: 0 0 79px 0;
+    padding: 20px 50px;
+    width: fit-content;
+    top: 465px;
+    left: 631px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+  }
+
+  &__image {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 120px auto;
+    width: 83.33%;
+    min-width: 284px;
+    max-width: 1200px;
+    background-image: url(../../../images/features-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+
+  &__quote {
+    margin: 0;
+    padding: 0 0 21.6% 0;
+    max-width: 470px;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    line-height: 1.29;
+  }
+
+  &__author {
+    margin: 0 350px 4px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &__profession {
+    display: block;
+    margin: 6px 0 0 0;
+    padding: 0;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    opacity: .7;
+  }
+}
