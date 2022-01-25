@@ -6,6 +6,13 @@
   list-style: none;
 }
 
+.title {
+  margin: 0;
+  padding: 0;
+  color: #151515;
+  font-weight: 700;
+}
+
 .link {
   margin: 0;
   padding: 0;
@@ -36,6 +43,7 @@
 }
 
 .header {
+  z-index: 2;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -44,7 +52,7 @@
   background: #f4f4f4;
 }
 .header__nav {
-  padding: 28px 120px;
+  padding: 27px 120px;
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
@@ -68,4 +76,146 @@
 }
 .header__link:hover {
   opacity: 0.75;
+}
+
+.main {
+  padding-top: 93px;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.main-screen {
+  margin: 0;
+  padding: 0;
+}
+.main-screen__content {
+  display: grid;
+  grid-template-areas: "title card" "description card" "button card" "bicycle-name card";
+  grid-template-columns: 470px 1fr;
+  justify-items: start;
+  align-items: start;
+  margin-left: 120px;
+  background-image: url(../../../images/main-background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 91.7%;
+}
+.main-screen__title {
+  grid-area: title;
+  padding-top: 65px;
+  width: 320px;
+  font-size: 55px;
+  line-height: 1.09;
+  letter-spacing: -0.5px;
+}
+.main-screen__text {
+  grid-area: description;
+  margin: 0;
+  padding: 43px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  width: 430px;
+  opacity: 0.7;
+}
+.main-screen__button {
+  grid-area: button;
+  display: inline-block;
+  margin: 53px 0 0 0;
+  padding: 16px 46px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.29;
+  text-decoration: none;
+  background-color: #24b47e;
+  background-image: linear-gradient(#319E75, #319E75);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  transition: background-size 0.5s ease;
+}
+.main-screen__button:hover {
+  background-size: 100% 100%;
+}
+.main-screen__bicycle-name {
+  grid-area: bicycle-name;
+  margin: 169px 0 0 0;
+  padding: 0 0 205px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+.main-screen__bicycle-name:after {
+  content: "";
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
+  width: 132px;
+  height: 2px;
+  background-color: #d7d4d4;
+}
+.main-screen__card {
+  grid-area: card;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  margin: 0 0 79px 0;
+  padding: 20px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 465px;
+  left: 631px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.main-screen__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.main-screen__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 120px auto;
+  width: 83.33%;
+  min-width: 284px;
+  max-width: 1200px;
+  background-image: url(../../../images/features-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+.main-screen__quote {
+  margin: 0;
+  padding: 0 0 21.6% 0;
+  max-width: 470px;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.29;
+}
+.main-screen__author {
+  margin: 0 350px 4px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.main-screen__profession {
+  display: block;
+  margin: 6px 0 0 0;
+  padding: 0;
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  opacity: 0.7;
 }/*# sourceMappingURL=index.css.map */
